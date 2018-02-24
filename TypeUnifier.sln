@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeUnifier", "TypeUnifier\TypeUnifier.csproj", "{4C2CB63C-20BD-4A68-85E5-525CF8E613D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeUnifier.Test", "TypeUnifier.Test\TypeUnifier.Test.csproj", "{8759ED56-7470-4C19-88D0-5A4FDD180329}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4C2CB63C-20BD-4A68-85E5-525CF8E613D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C2CB63C-20BD-4A68-85E5-525CF8E613D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C2CB63C-20BD-4A68-85E5-525CF8E613D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8759ED56-7470-4C19-88D0-5A4FDD180329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8759ED56-7470-4C19-88D0-5A4FDD180329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8759ED56-7470-4C19-88D0-5A4FDD180329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8759ED56-7470-4C19-88D0-5A4FDD180329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
