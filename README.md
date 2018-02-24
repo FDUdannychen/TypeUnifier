@@ -1,6 +1,6 @@
-# Type Unifier
+# Type Unifier [![Version](https://img.shields.io/nuget/v/AgileSwitch.svg)](https://www.nuget.org/packages/TypeUnifier)
 
-A library that dispatches member access of a type A to its mapped types when there are no common interfaces or inheritances between them.
+A library that dispatches member access of a type to its mapped types when there are no common interfaces or inheritances between them.
 
 # Concepts
 ##### 1. Abstraction
@@ -13,6 +13,7 @@ public enum UserType
     User = 1,
     Admin = 2
 }
+
 public interface IUser
 {
     [Constructor] IUser New(string name, UserType type);
@@ -30,6 +31,7 @@ public enum UserType
     Guest = 0,
     User = 1
 }
+
 public class User
 {
     public User(string name, UserType type)
@@ -83,6 +85,7 @@ public interface IUserService
     int MaxUserCount { [Static]get; }
     [method: Static] event EventHandler OnUserCreated;
 }
+
 public class UserService
 {
     public static User CreateUser(string name)
@@ -94,6 +97,7 @@ public class UserService
     public static int MaxUserCount { get { return 100; } }
     public static event EventHandler OnUserCreated;
 }
+
 var userService = _dispatcher.For<IUserService>("node");
 var maxUserCount = userService.MaxUserCount;
 userService.OnUserCreated += delegate { Trace.WriteLine("User Created"); };
@@ -115,11 +119,13 @@ public interface IUser
     [Alias("ChangeType", "ChangeTypeUnsafe")] void ChangeType(UserType newType);
     void ChangeTypeSafe(UserType newType);
 }
+
 //implementation1
 public class User
 {
     public void ChangeType(UserType newType) {  }
 }
+
 //implementation2
 public class User
 {
@@ -137,6 +143,7 @@ public interface IUserService
 {
     [Static] IUser CreateUser(string name);
 }
+
 public interface IUserAlreadyExistsException : IException
 {
     string Name { get; }
@@ -153,6 +160,7 @@ public class UserAlreadyExistsException : Exception
         this.Name = name;
     }
 }
+
 public class UserService
 {
     public static User CreateUser(string name)
@@ -174,6 +182,7 @@ public class UserAlreadyExistsException : Exception
         this.Name = name;
     }
 }
+
 public class UserService
 {
     public static User CreateUser(string name)

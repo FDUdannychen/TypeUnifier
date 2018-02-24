@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461;net45</TargetFrameworks>
+    <Authors>dannychen</Authors>
+    <Company></Company>
+    <Product />
+    <PackageLicenseUrl>https://github.com/FDUdannychen/TypeUnifier/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/FDUdannychen/TypeUnifier</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FDUdannychen/TypeUnifier</RepositoryUrl>
+    <PackageTags>duck-typing, reflection, dynamic</PackageTags>
+    <Title>Type Unifier</Title>
+    <Description>A library that dispatches member access of a type to its mapped types when there are no common interfaces or inheritances between them.</Description>
   </PropertyGroup>
 
   <ItemGroup>
