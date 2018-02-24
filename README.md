@@ -1,6 +1,7 @@
-# Type Unifier [![Version](https://img.shields.io/nuget/v/AgileSwitch.svg)](https://www.nuget.org/packages/TypeUnifier)
-
+# Type Unifier
 A library that dispatches member access of a type to its mapped types when there are no common interfaces or inheritances between them.
+
+[![Version](https://img.shields.io/nuget/v/TypeUnifier.svg)](https://www.nuget.org/packages/TypeUnifier)
 
 # Concepts
 ##### 1. Abstraction
